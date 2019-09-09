@@ -1,0 +1,45 @@
+{
+  "name": "limabean-devtest",
+  "version": "0.9.1",
+  "description": "Lima Bean developer application process",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "gulp copy-assets"
+  },
+  "engines": {
+    "npm": ">=2.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashleyjenniker/limabean-devtest.git"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "Ashley Jenniker",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/ashleyjenniker/limabean-devtest/issues"
+  },
+  "homepage": "https://ashleyjenniker.co.za/projects/limabean-devtest",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-ignore": "^2.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-rimraf": "^0.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "run-sequence": "^2.2.1"
+  }
+}

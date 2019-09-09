@@ -1,0 +1,95 @@
+/*
+ * Helpers
+**/
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+img, svg, span, a, button {
+  display: inline-block;
+}
+
+a, button, .header, .activities-name {
+  transition: .3s;
+}
+
+p, .p, ul {
+  font-size: 0.938em;
+}
+
+.bg {
+
+  &-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-pink {
+    background-color: $pink;
+  }
+
+  &-green {
+    background-color: $green;
+  }
+
+  &-orange {
+    background-color: $orange;
+  }
+
+  &-purple {
+    background-color: $purple;
+  }
+
+}
+
+.container,
+.navbar-expand-lg > .container {
+  position: relative;
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+.section-padding {
+  padding-top: 4.375rem;
+}
+
+.valign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1rem;
+  border: 2px solid;
+  padding: 0.475rem 1.5rem;
+
+  &-pink {
+    color: $white;
+    border-color: $pink;
+    background-color: $pink;
+    &:hover {
+      color: $white;
+      border-color: darken( $pink, 4% );
+      background-color: darken( $pink, 4% );
+    }
+  }
+
+  &-outline-pink {
+    color: $pink;
+    border-color: $pink;
+    background-color: transparent;
+    &:hover {
+      color: darken( $pink, 4% );
+      border-color: darken( $pink, 4% );
+      background-color: transparent;
+    }
+  }
+
+}

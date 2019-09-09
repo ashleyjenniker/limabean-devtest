@@ -1,0 +1,10 @@
+{
+    "name": "limabean-devtest",
+    "description": "Lima Bean developer application process",
+    "type": "custom-theme",
+    "license": "GPL-2.0",
+    "minimum-stability": "stable",
+    "require": {"composer/installers": "^1.5"},
+    "keywords": ["custom","theme","bootstrap"],
+    "homepage": "https://github.com/ashleyjenniker/limabean-devtest"
+}

@@ -1,0 +1,283 @@
+/*
+ * Main stylesheet
+**/
+
+/* Basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  background-color: transparentize($black, .3);
+
+  @media all and (min-width: 992px) {
+    background-color: transparent;
+  }
+
+  /* when page scrolls */
+  &.scrolled {
+    background-color: transparentize($black, .3);
+
+    @media all and (min-width: 992px) {
+      .nav-link {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    }
+
+  }
+
+}
+
+/* Branding */
+.branding {
+  svg {
+    width: 117px;
+    height: 13px; 
+  }
+}
+
+/*  Header Main Menu / Navbar */
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+
+  /* Header Banding */
+  .branding {
+    svg {
+      fill: $white;
+    }
+  }
+
+  &-toggler-icon {
+    svg {
+      max-width: 30px;
+      max-height: 30px;
+      fill: $white;
+    }
+  }
+
+  .navbar-nav {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media all and (min-width: 992px) {
+      display: flex;
+      margin-right: 0;
+    }
+
+    .nav-link {
+      font-size: 0.938em;
+      margin: 0.938rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      text-align: center;
+      color: $white;
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+
+      @media all and (min-width: 992px) {
+        text-align: left;
+      }
+
+      &:hover {
+        color: $pink;
+      }
+    }
+
+    .sign-up {
+      border: 2px solid $white;
+      border-radius: 100px;
+      padding-right: 1.250rem;
+      padding-left: 1.250rem;
+      &:hover {
+        color: $white;
+        border-color: $pink;
+        background-color: $pink;
+      }
+    }
+
+  }
+}
+
+/* Greeting */
+.greeting {
+  height: 500px;
+  padding-top: 1.875rem;
+  background-attachment: fixed;
+  background-image: url('../images/headerBackground.jpg');
+
+  @media all and (min-width: 768px) {
+    height: 700px;
+  }
+
+  &-headline {
+    font-size: 2.125rem;
+    line-height: 1.25;
+    color: $white;
+
+    @media all and (min-width: 768px) {
+      font-size: 3.125rem;
+    }
+
+    span {
+      display: block;
+    }
+
+  }
+
+  &-blurb {
+    font-size: 1.25rem;
+    color: $white;
+    margin: 1.25rem 0 1.875rem;
+
+    @media all and (min-width: 768px) {
+      font-size: 1.45rem;
+    }
+
+  }
+
+}
+
+/* Partners */
+.partners {
+  &-profile {
+    position: relative;
+    display: table;
+    margin: auto;
+
+    img {
+      max-width: 125px;
+      height: auto;
+    }
+
+    svg {
+      fill: $white;
+      max-width: 17px;
+      max-height: 17px;
+    }
+
+  }
+
+  &-caption {
+    width: 35px;
+    height: 35px;
+    padding-top: 4px;
+    box-shadow: 0 0 0 5px $white;
+    position: absolute;
+    top: auto;
+    right: -5px;
+    bottom: -5px;
+    left: auto;
+  }
+
+  &-name {
+    margin: 1.25rem 0;
+  }
+
+  &-blurb {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+/* Partners */
+.activities {
+
+  &-col {
+    padding-bottom: $grid-gutter-width;
+  }
+
+  &-box {
+    border-radius: $border-radius;
+    position: relative;
+    overflow: hidden;
+    height: 210px;
+
+    @media all and (min-width: 992px) {
+      height: 310px;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: transparentize($black, .75);
+      transition: .3s;
+    }
+
+  }
+
+  &-name {
+    color: $white;
+    width: 100%;
+    padding: $grid-gutter-width;
+    position: relative;
+    z-index: 1;
+  }
+
+  &-box:hover {
+    text-decoration: none;
+
+    .activities-name {
+      color: $black;
+    }
+
+    &:before {
+      background-color: transparentize($black, .95);
+    }
+
+  }
+
+}
+
+
+/* Footer */
+.footer {
+  padding-top: 3.125rem;
+  padding-bottom: 1.250rem;
+  margin-top: 3.125rem;
+  border-top: 2px solid $pink;
+
+  /* footer branding */
+  .branding {
+
+    svg {
+      fill: $pink;
+    }
+
+  }
+
+  &-menu,
+  &-menu-title {
+    line-height: 2;
+  }
+
+}

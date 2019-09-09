@@ -1,0 +1,42 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+$font-family-sans-serif:        'Roboto', sans-serif;;
+
+$font-size-base:                1rem !default; // Assumes the browser default, typically `16px`
+$font-weight-base:              300 !default;
+
+$headings-margin-bottom:        0 !default;
+$headings-font-family:          'Montserrat', sans-serif;
+$headings-font-weight:          700 !default;
+$headings-color:                #444 !default;
+
+$body-bg:                       #fff !default;
+$body-color:                    #666 !default;
+
+$btn-font-weight:               700 !default;
+
+$green:                         #18d4ca !default;
+$pink:                          #ff4e50 !default;
+$orange:                        #ffa710 !default;
+$purple:                        #667df3 !default;
+
+$danger:                        $pink !default;
+
+$link-color:                    $body-color !default;
+$link-decoration:               none !default;
+$link-hover-color:              darken($body-color, 25%) !default;
+$link-hover-decoration:         underline !default;
+ 
+$btn-border-radius:             100px !default;
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 980px
+) !default;
+
+$grid-gutter-width:              20px !default;

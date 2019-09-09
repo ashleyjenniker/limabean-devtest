@@ -1,0 +1,31 @@
+{
+  "name": "limabean-devtest",
+  "version": "1.0",
+  "homepage": "https://ashleyjenniker.co.za/projects/limabean-devtest",
+  "authors": [
+    "Ashley Jenniker <hello@ashleyjenniker.co.za>"
+  ],
+  "description": "Lima Bean developer application process",
+  "moduleType": "globals",
+  "main": [
+    "assets/sass/main.scss"
+  ],
+  "keywords": [
+    "bootstrap",
+    "underscores",
+    "wordpress",
+    "_s",
+    "sass"
+  ],
+  "license": "GPL-2.0",
+  "ignore": [
+    "**/.*",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "_source": "https://github.com/ashleyjenniker/limabean-devtest.git",
+  "_target": "~1.0",
+  "_originalSource": "ashleyjenniker"
+}
